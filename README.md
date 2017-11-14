@@ -14,15 +14,17 @@ To remove:
 brew untap OxfordSKA/homebrew-tap
 ```
 
-## Updating forumla
+## Developer / maintainer info
 
-Replace the url and generate a new sha256 with
+### Updating forumla
+
+In most cases to update to a new version, simply replace the url and generate a new sha256 with
 
 ```bash
 shasum -a 256 <file>
 ```
 
-## Creating and updating bottles
+### Creating and updating bottles
 
 To create a new bottle:
 
@@ -30,3 +32,7 @@ To create a new bottle:
 brew install --build-bottle <forumla>
 brew bottle <formula>
 ```
+
+### Creating named versions
+
+see <https://docs.brew.sh/Versions.html>
