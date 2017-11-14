@@ -3,8 +3,8 @@
 
 class CasacoreData < Formula
   homepage 'https://github.com/casacore/casacore'
-  url 'ftp://ftp.astron.nl/outgoing/Measures/WSRT_Measures_20171016-000001.ztar'
-  sha256 "b756bf879d1c9f6577f4513c12273baa53cf905dde884f4d66010cbda7d684f2"
+  url 'ftp://ftp.astron.nl/outgoing/Measures/WSRT_Measures_20171106-000001.ztar'
+  sha256 "48a53785d96cd4ae203dbc07998af020e5413c260be4692914a564a80eaa6d81"
   head 'ftp://ftp.astron.nl/outgoing/Measures/WSRT_Measures.ztar'
 
   option 'use-casapy', 'Use Mac CASA.App data directory if found'

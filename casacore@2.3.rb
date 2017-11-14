@@ -1,16 +1,16 @@
 # This formula is based on casacore.rb found at:
 # https://github.com/ska-sa/homebrew-tap
 
-class Casacore < Formula
+class CasacoreAT23 < Formula
     desc "Suite of C++ libraries for radio astronomy data processing."
     homepage "https://github.com/casacore/casacore"
-    url "https://github.com/casacore/casacore/archive/v2.4.0.tar.gz"
-    sha256 "9ae749d604d037a5a7b13b9eb759dfb8e22a405dcdb61f67c0916d3fe78db39c"
+    url "https://github.com/casacore/casacore/archive/v2.3.0.tar.gz"
+    sha256 "d8ed5373f5447885be6d3aac72f26cee24a662df5caf4a6cd23e846b79181700"
     head "https://github.com/casacore/casacore.git"
 
     bottle do
       root_url "http://oskar.oerc.ox.ac.uk/homebrew-bottles"
-      sha256 "b101225efa0d5cd27099a241b04182df4bc9af46df5f03ead2541b283500e79b" => :high_sierra
+      sha256 "5c52b07c8cafce81fe9248b8b40182d639134ad3c4f68fa2240e260bdc9204b6" => :high_sierra
     end
 
     option "with-cxx11", "Build with C++11 support"
