@@ -29,7 +29,7 @@ shasum -a 256 <file>
 To create a new bottle:
 
 ```bash
-brew install --build-bottle <forumla>
+brew install --build-bottle <formula>
 brew bottle <formula>
 ```
 
