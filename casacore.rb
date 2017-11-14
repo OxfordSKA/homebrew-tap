@@ -55,7 +55,7 @@ class Casacore < Formula
       if build.with? "python3"
         cmake_args << "-DBUILD_PYTHON3=ON"
         cmake_args << "-DPYTHON3_EXECUTABLE=/usr/local/bin/python3"
-        cmake_args << "-DPYTHON3_LIBRARY=/usr/local/Frameworks/Python.framework/Versions/3.5/lib/libpython3.5.dylib"
+        cmake_args << "-DPYTHON3_LIBRARY=/usr/local/Frameworks/Python.framework/Versions/3.6/lib/libpython3.6.dylib"
       end
 
       cmake_args << "-DUSE_FFTW3=ON" << "-DFFTW3_ROOT_DIR=#{HOMEBREW_PREFIX}"
