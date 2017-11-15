@@ -36,3 +36,12 @@ brew bottle <formula>
 ### Creating named versions
 
 see <https://docs.brew.sh/Versions.html>
+
+### Verbose build mode
+
+When installing / building a homebrew package verbose mode can be enabled
+with the `-v` flag. For example:
+
+```bash
+brew install -v casacore
+```

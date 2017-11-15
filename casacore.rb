@@ -13,6 +13,15 @@ class Casacore < Formula
       sha256 "b101225efa0d5cd27099a241b04182df4bc9af46df5f03ead2541b283500e79b" => :high_sierra
     end
 
+    # Apply patches for casacore v2.4.0
+    stable do
+      # 1. Fix CMake for python3 bindings if using Python 3.6 from homebrew
+      patch do
+        url "https://gist.githubusercontent.com/bmort/7a00c0b1a0db3e1f37a79a498aac4018/raw/9756561b5b0bac0bc4bd45e47e27693b695b8ccd/python3.diff"
+        sha256 "5839f30cd99e5d688664737d458e63893e38eab174e9728da056b04776b444e6"
+      end
+    end
+
     option "with-cxx11", "Build with C++11 support"
 
     depends_on "cmake" => :build
